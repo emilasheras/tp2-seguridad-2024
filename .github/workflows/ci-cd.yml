@@ -1,0 +1,40 @@
+name: CI/CD Pipeline
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "20"
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Lint and Test
+              run: |
+                  npm run test
+
+            - name: Build Project
+              run: |
+                  npm run build
+
+    # Acá está la magia✨
+    deploy:
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            - name: Deploy to Render
+              run: |
+                  curl -X POST "https://api.render.com/v1/services/srv-cs3f1dt2ng1s73cclit0/deploys" \
+                  -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}"
