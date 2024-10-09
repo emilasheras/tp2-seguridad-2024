@@ -1,0 +1,77 @@
+#logo {
+    margin-left: 20px;
+}
+
+#carro {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    margin-bottom: 25px;
+}
+
+#total {
+    font-size: large;
+}
+
+p {
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+li:hover {
+    opacity: 0.7;
+}
+button{
+    height: 40px;
+}
+.spin{
+    height: 40px;
+}
+
+@media screen and (max-width: 770px) {
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+    p{
+        font-size: small;
+    }
+    div{
+        font-size: small;
+    }
+
+    #contTotal {
+        display: none;
+    }
+
+    #busqueda {
+        width: 85%;
+        padding: 10px;
+    }
+
+    #carro {
+        width: 15%;
+    }
+
+    nav {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .etiquetaCarro{
+        display: none;
+    }
+}
