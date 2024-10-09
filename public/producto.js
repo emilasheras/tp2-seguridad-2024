@@ -13,7 +13,7 @@ document.getElementById('nombre').textContent = producto.nombre;
 document.getElementById('descripcion').textContent = producto.descripcion;
 
 // Mostrar div al presionar boton agregar
-let boton = document.getElementById('agregar');
+let boton = document.getElementById('agregar'); 
 boton.textContent = "$" + producto.precio;
 boton.addEventListener('click', function () {
     agregar(producto);
