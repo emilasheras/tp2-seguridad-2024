@@ -4,8 +4,7 @@
   "description": "TP 2 de seguridad",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"No build necessary\"",
-    "install": "npm install",
+    "build": "npm install",
     "start": "node app.js",
     "dev":"nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
