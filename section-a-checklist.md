@@ -16,7 +16,7 @@
 #### 4. Gestión Segura de Claves de API
    - [x] API registrada (e.g., OpenWeatherMap).
    - [x] Clave API configurada como Secret en GitHub.
-   - [ ] Pendiente usar el Secret en el workflow y aplicación.
+   - [x] Pendiente usar el Secret en el workflow y aplicación.
 
 #### 5. Implementación de Despliegue Seguro
    - [x] Despliegue configurado en Render.
